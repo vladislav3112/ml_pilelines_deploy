@@ -34,3 +34,6 @@ dvc pull # скачать данные
 
 dvc exp run # запуск эксперимента
 ```
+
+## Заметки  
+1. Доступные модели: `DecisionTree`, `RandomForest`, `LogisticRegression`, `SVC`, указывается в params.yaml
