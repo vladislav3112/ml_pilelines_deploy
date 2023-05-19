@@ -166,11 +166,11 @@ stages:
       params.yaml:
         train:
           test_size: 0.9
-          model: RandomForest
+          model: LogisticRegression
     outs:
     - path: data/train
-      md5: f3a3b00fc448ea36076a3c0e1baa46b7.dir
-      size: 93209
+      md5: c165a661b03edb1dffc8d5fb9e1c97e6.dir
+      size: 15445
       nfiles: 4
   eval:
     cmd: python lib/eval.py --config-path params.yaml

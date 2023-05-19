@@ -1,7 +1,7 @@
 version: '3.8'
 services:
     aaa_ds_course:
-        image: tolkkk/irisr_simpe
+        image: jonfun/aaa_iris_pipeline:0.0.1
         ports:
             - "8088:8088"
         volumes:

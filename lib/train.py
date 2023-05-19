@@ -49,15 +49,16 @@ def train_model(x, y):
 
     config = params_data['train']
     model_name = config['model']
-    match model_name:
-        case 'DecisionTree':
-            model = DecisionTreeClassifier()
-        case 'LogisticRegression':
-            model = LogisticRegression()
-        case 'RandomForest':
-            model = RandomForestClassifier()
-        case 'SVC':
-            model = SVC()
+    
+    if (model_name == 'DecisionTree'):
+        model = DecisionTreeClassifier()
+    elif (model_name == 'LogisticRegression'):
+        model = LogisticRegression()
+    elif (model_name == 'RandomForest'):
+        model = RandomForestClassifier()
+    elif (model_name == 'SVC'):
+        model = SVC()
+        
     model.fit(x, y)
     return model
 

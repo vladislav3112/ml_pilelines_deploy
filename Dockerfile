@@ -22,3 +22,6 @@ RUN jupyter contrib nbextension install --user && \
     python3.9 -m ipykernel.kernelspec
 
 RUN PYTHONPATH="$WORKDIR:$PYTHONPATH"
+
+RUN git config --global user.email "dyushakolesov@mail.com"
+RUN git config --global user.name "dyushakolesov"

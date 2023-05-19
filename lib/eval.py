@@ -46,7 +46,6 @@ def eval():
     mlflow.log_metrics(metrics)
     mlflow.log_dict(report,'data/eval/report.json')
     mlflow.log_artifact('data/eval/heatmap.png')
-    mlflow.log_artifact('data/train/model.pkl')
 
 if __name__ == '__main__':
     eval()
